@@ -14,11 +14,28 @@
     padding: 10px;
 }
 
+.time-box{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 10px auto 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#time{
+    font-size: 2.5rem;
+    text-align: center;
+    background: linear-gradient(0, #ff5945, #002765);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+}
+
 .todo-app{
     width:100%;
     max-width: 540px;
     background: #fff;
-    margin: 100px auto 20px;
+    margin: 40px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
 }

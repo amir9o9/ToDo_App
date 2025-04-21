@@ -1,6 +1,7 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 
+
 function addTask(){
     if(inputBox.value === ''){
         alert("You must write somthing!");
@@ -36,4 +37,19 @@ function showTask(){
     listContainer.innerHTML = localStorage.getItem("data");
 }
 
+function showTime() {
+    let time = document.getElementById("time");
+    let minute , hour , day , date;
+    let weekDays = ['Sun' , 'Mon' , 'Tus' , 'Wed' , 'Thu' , 'Fri' , 'Sat'];
+    setInterval(()=>{ 
+        date= new Date();
+        minute=date.getMinutes();
+        hour=date.getHours();
+        day = weekDays[date.getDay()];        
+        time.innerHTML= `${day}  ${hour} : ${minute}`
+    },1000)
+}
+
+
+showTime();
 showTask();
