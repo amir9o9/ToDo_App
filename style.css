@@ -82,12 +82,18 @@ button{
 }
 
 ul li{
+    width:100%;
+    max-width: 540px;
+    margin: 15px auto 20px;
+    border-radius: 10px;
+    background-color: #fff;
     list-style: none;
     font-size: 17px;
-    padding: 12px 8px 12px 50px;
+    padding: 15px 8px 15px 50px;
     user-select: none;
     cursor: pointer;
     position: relative;
+    overflow-wrap: break-word;
 }
 
 ul li::before{
